@@ -1,0 +1,49 @@
+{
+  "name": "datagouv-tabular-api-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for data.gouv.fr tabular API - Access French open data through Model Context Protocol",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npx -y tsx server.ts",
+    "start": "node dist/server.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "data-gouv-fr",
+    "french-open-data",
+    "tabular-api",
+    "open-data",
+    "france",
+    "data-gouv",
+    "mcp-server"
+  ],
+  "author": "huextrat",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huextrat/data-gouv-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/huextrat/data-gouv-mcp/issues"
+  },
+  "homepage": "https://github.com/huextrat/data-gouv-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.1",
+    "express": "^5.1.0",
+    "zod": "3",
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
